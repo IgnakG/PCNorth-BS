@@ -1,6 +1,15 @@
 
 /* General */
 
+:root{
+    --fondoClaro: rgb(188, 219, 186);
+    --fondoOscuro: rgb(54, 88, 54);
+}
+
+.fondo{
+    background-color: var(--fondoClaro);
+}
+
 .stickyHeader{position: sticky; top: 0px;}
 
 .bodyDesign{
