@@ -11,9 +11,9 @@
     <!-- Css local -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body class="fondo">
+<body class="disenio">
     <header>
-        <div class="container">
+        <div class="container disenio--header">
             <div class="nav nav-pills">
                 <div class="btn btn-secondary border"> <a href="../index.html"><img src="../img/banner.png" alt="PCNorth" width="100%" height="100%"></a></div>
             </div>
@@ -25,37 +25,35 @@
             </div>
         </div>
     </header>
-    <main class="container row m-2">
-        <div class="col rounded bg-secondary m-4">
+    <main class="container col disenio--main">
+        <div class="container row disenio--contenido">
             <h2>Los que estamos detrás de todo:</h2>
             <!-- Tablas con Nuestros Datos -->
-            <table border=1 cellpadding="10" cellspacing="5">
-                <tr>
-                    <td>Nombre</d>
-                    <td>Rol</td>
-                    <td>Juego Favorito</td>
-                    <td>Color Favorito</td>
-                </tr>
-                <tr>
-                    <td>Matías</td>
-                    <td>Jefe</td>
-                    <td>Age of Empires II</td>
-                    <td>Verde</td>
-                </tr>
-                <tr>
-                    <td>Nadie</td>
-                    <td>Fantasma</td>
-                    <td>Dados</td>
-                    <td>Rojo</td>
-                </tr>
-            </table> 
+            <div class="col-lg-2 col-6 card m-4 border">
+                <img src="../img/matias.jpg" class="card-img-top" alt="matias">
+          
+                <div class="card-body">
+                    <h5 class="card-title">Matías Goñi</h5>
+                    <p class="card-text">Estudiante de la FIUBA</p>
+                    <a href="https://www.instagram.com/matiasg34" class="btn btn-secondary">Conocer</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-6 card m-4 border">
+                <img src="../img/anonimo.jpg" class="card-img-top" alt="anonimo">
+          
+                <div class="card-body">
+                    <h5 class="card-title">Anonimo</h5>
+                    <p class="card-text">¿Quién será?</p>
+                    <a href="https://www.youtube.com/watch?v=kqcIVntQIzc" class="btn btn-secondary">Conocer</a>
+                </div>
+            </div>
         </div>
-        <div class="col rounded bg-secondary m-4">
+        <div class="col disenio--contenido">
             <p>Tema para entretener:</p>
             <iframe width="720" height="480" src="https://www.youtube.com/embed/NmCCQxVBfyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </main>
-    <footer class="container-fluid row bg-secondary">
+    <footer class="container row disenio--footer">
         <div class="col-lg-6 col-12 row">
             <a class="col" href="https://www.whatsapp.com"><img src="../img/wpp.png" alt="Whatsapp" class="m-1 btn btn-light w-50"></a>
             <a class="col" href="https://www.instagram.com"><img src="../img/Insta.png" alt="Instagram" class="m-1 btn btn-light w-50"></a>
@@ -65,7 +63,7 @@
         <div class="col-lg-6 col-12">
             <h2 class="text-center">PCNorth</h2>
         </div>
-        <div class="bg-light col-lg-6 col-12">
+        <div class="disenio--contenido col-lg-6 col-12">
             <p class="text-center">Cualquier explosion en los componentes son debidos a problemas de fabrica y no al juego de voley con estos por parte del equipo</p>
         </div>
     </footer>

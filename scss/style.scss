@@ -1,0 +1,43 @@
+$paletaColores: (
+    principal: rgb(121, 168, 121),
+    secundario: rgb(166, 201, 166),
+    fondo: rgb(158, 158, 158)
+);
+
+@mixin espacios($cuerpoAncho, $cuerpoAlto, $marco){
+    padding: $cuerpoAncho $cuerpoAlto;
+    margin: $marco;
+}
+
+.disenio{
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: map-get($paletaColores , fondo)
+}
+
+.disenio--header{
+    @extend .disenio;
+    background-color: map-get($paletaColores , principal);
+    @include espacios( 2%, 2%, 5%);
+}
+
+.disenio--main{
+    @extend .disenio;
+    background-color: map-get($paletaColores , secundario);
+    @include espacios( 5%, 2%, 5%);
+}
+
+.disenio--contenido{
+    @extend .disenio;
+    background-color: map-get($paletaColores , principal);
+    @include espacios( 2%, 2%, auto);
+}
+
+.disenio--footer{
+    @extend .disenio;
+    background-color: map-get($paletaColores , principal);
+    @include espacios( 2%, 2%, 5%);
+}
+
